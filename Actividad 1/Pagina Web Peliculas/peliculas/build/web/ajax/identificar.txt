@@ -1,0 +1,21 @@
+<form method="post" action="" id="registro">
+    <p>Usuario</p>
+    <input type="text" id="reg-user" name="usuario"></input>
+    <p>Contraseña</p>
+    <input type="password" id="reg-pass" name="password"></input>
+    <div class="enl-registro">
+        <a href="../../peliculas/paginas/registro.html" id="amigos">Registrarse</a>
+    </div>
+    <script type="text/javascript">
+        $("#amigos").fancybox({
+            'autoScale'         : true,
+            'type'              : 'iframe',
+            'centerOnScroll'    : true,
+            'width'             : 625,
+            'height'            : 400
+            //'showCloseButton'   : false,
+            //'enableEscapeButton': false
+        });
+    </script>
+    <p><input  type="submit" value="Entrar"></input></p>
+</form>

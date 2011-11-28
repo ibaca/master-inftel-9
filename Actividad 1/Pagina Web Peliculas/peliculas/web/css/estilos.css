@@ -1,0 +1,750 @@
+@import url('http://fonts.googleapis.com/css?family=Neucha&subset=Latin');
+
+/********************* ESTILOS Alberto *************************/
+
+#slider {
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+#contenedor-slider {
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 560px;
+    z-index: 20;
+}
+
+.imagen-slider {
+    display: inline-block;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 560px;
+}
+
+.control_banner {
+    background: url("../imagenes/cabecero/fondo.png") no-repeat 0 0;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 269px;
+    width: 157px;
+    z-index: 210;
+}
+
+.control_marcas {
+    float: left;
+    line-height: 25px;
+    padding-left: 14px;
+    position: absolute;
+    text-align: center;
+    width: 72px;
+}
+
+.control_banner_botones {
+    background: url("../imagenes/cabecero/rectangulo-controles.png") no-repeat 0 0;
+    height: 19px;
+    position: absolute;
+    right: 6px;
+    top: 3px;
+    width: 59px;
+}
+
+.control_banner_boton {
+    float: left;
+    height: 15px;
+    padding-top: 4px;
+    text-align: center;
+    width: 19px;
+}
+
+.dnone {
+    display: none;
+}
+
+.control_desactivo {
+    background: url("../imagenes/cabecero/inactivo.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+}
+
+.control_marcas_item {
+    display: inline-block;
+    margin: 9px 3px;
+    cursor:pointer;
+}
+
+.control_activo {
+    background: url("../imagenes/cabecero/activo.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+}
+
+.img1 { background-image: url("../imagenes/cabecero/master.png"); }
+.img2 { background-image: url("../imagenes/cabecero/tron.jpg"); }
+.img3 { background-image: url("../imagenes/cabecero/inmortals.jpg"); }
+.img4 { background-image: url("../imagenes/cabecero/pirates.jpg"); }
+
+#buscador {
+    display: inline-block;
+    position: relative;
+    top: -13px;
+}
+
+/* Navegador */
+
+#navegacion {
+    background : #F5F4C3 url('http://t1.gstatic.com/images?q=tbn:ANd9GcTwVT1M4ez5UGhvccy5RbPEb0qYltWZu8ddax31dgZ7X6LSbKkA');
+    height: 35px;
+}
+
+ul.topnav {
+    list-style: none;
+    margin: 0;
+    margin-left: 15px;
+    display: inline-block;
+}
+ul.topnav li {
+    float: left;
+    margin: 0;
+    padding: 0 45px 0 0;
+    position: relative; 
+}
+ul.topnav li a{
+    padding: 11px 5px;
+    color: #000;
+    display: block;
+    text-decoration: none;
+    float: left;
+}
+
+ul.topnav li span.flecha {
+    background: url(../imagenes/flecha-abajo.png) no-repeat 0 0;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+}
+ul.topnav li span.subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+ul.topnav li ul.subnav {
+    list-style: none;
+    position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+    left: 0; top: 35px;
+    background: #333;
+    margin: 0; padding: 0;
+    display: none;
+    float: left;
+    width: 135px;
+    border-left: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+}
+ul.topnav li ul.subnav li{
+    margin: 0; padding: 0;
+    border-top: 1px solid #D6D6D6;
+    clear: both;
+    width: 135px;
+}
+html ul.topnav li ul.subnav li a {
+    float: left;
+    width: 120px;
+    background: #EBF2FE;
+    padding-left: 10px;
+}
+html ul.topnav li ul.subnav li a:hover { 
+    opacity:0.95;
+    filter:alpha(opacity=95);
+    background: #68729E;
+}
+
+.compartir {
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+#columna2 .compartir .texto {
+    vertical-align: super;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/********* Carrusel CM *******/
+
+.carrusel_boton{padding: 25px 0; width: 40px; text-align: center; float: left; cursor: pointer;}
+.carrusel_box{width: 200px; height: 70px; overflow: hidden; position: relative; float: left; display: block; margin-bottom: 10px;}
+.carrusel_deslizar{white-space: nowrap; position: relative; height: 70px; display: block;}
+.carrusel_item{ width: 61px; height: 61px; padding: 5px 3px; text-align: center;}
+.carrusel_item a{ vertical-align: middle; width: 61px; display: block;}
+.clear { clear: both; }
+
+/**************************************************************/
+
+
+
+body { 
+    background-image:  url(../imagenes/icon/linear_bb.jpg); 
+    background-repeat: repeat-x;
+    background-color: #000;
+    font : 8pt Verdana, Geneva, Arial, Helvetica, sans-serif; 
+    color : black; 
+    margin : 20px 0px 20px 0px;
+} 
+
+#wrap{
+    text-align: left; 
+    width: 700px; 
+    background-color : #ffffff; 
+    margin: auto; 
+  
+   
+}
+
+#cabecera{
+    height: 300px;
+    border-bottom: 1px groove gold;
+    border-top: 1px solid gold;
+    background-image: url(../imagenes/icon/fondocab.png);
+}
+
+#navegador{
+    background : #F5F4C3 url(../imagenes/icon/barra_yellow.jpg); 
+    padding : 3px 10px 5px 10px; 
+    border-top : 1px solid #cccccc; 
+    border-bottom : 1px solid #cccccc; 
+    
+}
+
+#menu {
+	display: table-cell;
+	width: 200px;
+	float: right;
+    margin-top: 12px;
+}
+
+#menu .menu_caja {
+	width: 100%;
+	margin:0px;
+	padding: 0px;
+	font-size: 12px;
+	list-style: none;
+	color: #454545;
+}
+
+#menu .menu_separador {
+	width: 100%;
+	height: 23px;
+	padding-top: 7px;
+	background-image: url(../imagenes/icon/contenido-menu.png);
+        background-color: #454545;
+	text-align: center;
+	color: white;
+}
+
+#menu .menu_separador a {
+	color: white;
+	text-decoration: none;
+}
+
+#menu .menu_separador a:hover {
+	font-weight: bold;
+}
+
+#menu a:hover {
+	text-decoration: none;
+}
+
+#menu li {
+	list-style-type: none;
+}
+
+#menu .menu_caja li a {
+	display: block;
+	width: 100%;
+	height: 25px;
+	padding-top: 8px;
+	background-image: url(../imagenes/icon/caja_off.png);
+        
+	text-align: center;
+	color: #454545;
+	border-bottom: 1px #A5A5A5 solid;
+}
+
+#menu .menu_caja li a:hover {
+	background-image: url(../imagenes/icon/caja_on.png);
+        
+	color: #454545;
+
+}
+
+#menu #login_form {
+	text-align: center;
+	padding-top: 5px;
+	background-image: url(../imagenes/icon/login-fondo.png);
+	background-position: bottom right;
+        background-repeat: no-repeat;
+        background-color: #e2e2e3;
+	border-bottom: 1px #A5A5A5 solid;
+	font-size: 8pt;
+    height: 175px;
+}
+
+#menu #login_form .enl-registro {
+    margin-top: 5px;
+}
+
+#menu #login_form input[type=text]{
+	width: 100px;
+	font-size: 10px;
+}
+
+#menu #login_form input[type=password]{
+	width: 100px;
+	font-size: 10px;
+}
+
+#menu #login_form input[type=submit] {
+	font-size: 11px;
+	margin: 5px;
+	color: #252525;
+}
+#contenido{
+    width:480px; 
+    margin-left: 8px; 
+    padding: 12px 0px 10px 0px; 
+    background-color : #ffffff; 
+    float:left; 
+}
+
+A.enlacenav, A.enlacenav:VISITED, A.enlacenav:ACTIVE, A.enlacenav:FOCUS, A.enlacenav:LINK{ 
+color: #494E6B; 
+} 
+A.enlacenav:HOVER{ 
+color: #3F7DE3; 
+} 
+
+H1{ 
+font-size: 12pt; 
+} 
+#navabajo{ 
+font-weight : bold; 
+} 
+
+
+.op_nav{
+    display: inline;
+}
+
+#pie{ 
+
+border-top: groove 1px gold;
+clear : both; 
+color : #cccccc; 
+background: white url(../imagenes/icon/barra_yellow.jpg); 
+background-position: bottom;
+background-repeat: repeat-x;
+margin : auto; 
+padding: 20px;
+} 
+
+#borde{ 
+border: 2px solid #cccccc; 
+text-align: left; 
+width: 700px; 
+margin: auto; 
+}
+
+/********************* ESTILOS FRAN *************************/
+
+.hide {display:none}
+.show {display:inline}
+
+.videocuriosidades img{
+    float: inherit;
+    text-decoration: none;
+    margin-left: 60px;
+    padding: 5px;
+    
+}
+
+.curiosidadimagen{
+    height: 200px;
+    width: 370px;
+    padding: 2%;
+    margin: 5px;
+}
+
+.noticia{
+border: 2px groove #494E6B;
+margin-bottom: 2%;
+/*margin: 2%;
+padding: 2%;    */
+}
+.contenido_cabecera{
+    background-color: #fcefa1;
+    padding-left: 2%;
+    font-size: large;
+}
+
+.contenido_principal{
+    margin: 2%;
+    padding: 2%;
+}
+
+.contenido_leer a{
+    font-size: smaller;
+    /*font-style: oblique;*/
+    color: #494E6B;
+    text-decoration: none;
+}
+
+#carousel {
+	position: relative; /* Necesario */
+	overflow: hidden; /* Necesario */
+	height: 250px;
+	margin-left:0px;
+	background:#5B5B5B url(imagenes/carrusel/carousel-bg.png) bottom left repeat-x;
+}
+
+#carousel .belt {
+	position: absolute; /* Necesario */
+	left: 0;
+	top: 0;
+	margin:0 10px 10px 0;
+}
+
+#carousel .panel {
+	width:155px;
+        float: left; /* Necesario */
+	overflow: hidden;
+	margin: 5px;
+	padding:3px;
+	border:1px solid #5B5B5B;
+	background:#383838 url(imagenes/carrusel/carousel-panel-bg.png) bottom left repeat-x;
+}
+
+#carousel .panel img{
+        width:155px;
+        height: 230px;
+}
+
+			/* Botones del carousel */
+			
+.button-prev {
+	height:250px;
+	width:35px;
+	float:left;
+	background:#5B5B5B url(imagenes/carrusel/carousel-bg.png) bottom left repeat-x;
+	-moz-border-radius:10px 0 0 10px;
+}
+
+.button-prev a {
+	display:block;
+	padding:5px;
+	margin-top:105px;
+}
+
+.button-next {
+	height:250px;
+	width:35px;
+	float:right;
+	background:#5B5B5B url(imagenes/carrusel/carousel-bg.png) bottom left repeat-x;
+	-moz-border-radius:0 10px 10px 0;
+}
+
+.button-next a {
+	display:block;
+	padding:5px;
+	margin-top:105px;
+}
+
+
+a img {
+	border:none;
+}
+
+
+
+/* CSS PARA PAGINA DE PELICULA */
+#pelicula{
+    border: 2px groove #494E6B;
+    
+}
+#titulo_peli{
+    text-align: center;
+    font-weight: bold;
+    background-color: #fcefa1;
+    padding:20px;
+    font-size: 2em;
+}
+
+#columna1{
+    margin-top: 5px;
+    width: 35%;
+    float: left;
+}
+#columna2{
+    margin-top: 5px;
+    width: 65%;
+    float:right;
+}
+#cartel{
+    border: solid 1px #000;
+    
+}
+
+#datos_peli{
+    
+    
+}
+#datos_peli ul{
+    list-style-type: none;
+    padding-left: 5px;
+    
+}
+#datos_peli li{
+    list-style-type: none;
+    margin-bottom: 7px;
+    
+}
+
+
+#columna2 fieldset{
+    border-color:  gold;
+    border-style: solid;
+    margin-bottom: 6px;
+    
+}
+#columna2 legend{
+    font-weight: bold;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.centrado{
+    
+   align: middle; 
+}
+
+.video{
+    float:right;
+    text-decoration: none;
+    
+}
+
+#enlaces_pie{
+    float: right;
+}
+
+#cartel{
+    width: 164px;
+    height: 243px;
+}
+
+
+/* CSS LISTA DE PELICULAS */
+#lista_peli{
+    margin: 5px;
+    
+}
+ .elemento_list_peli{
+    
+    border-bottom: solid gold;
+    border-top: solid gold;
+    margin-bottom: 3px;
+    
+    
+}
+ .cont_cartel{
+     margin-bottom: 7px;
+    float:left;
+    width: 15%;
+    height: 94px;
+}
+.cartel_pequeno{
+    
+    
+    margin: 3px;
+    width: 60px;
+    height: 94px;
+}
+ .resumen{
+    margin-top: 3px;
+    margin-right: 5px;
+    width: 83%;
+    float:right;
+}
+
+.mt15 {
+    margin-top: 15px!important;
+}
+
+.m-comp {
+    margin: 5px 0px;
+    margin-left: 30px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.borde-rojo {
+    border: 1px solid red;
+}
+
+/** REGISTRO **/
+*:focus{
+	outline:none; /* Prevents blue border in Webkit */
+}
+
+form {
+	margin: 20px auto;
+}
+
+.fondo-azul {
+    background-color: aliceblue;
+}
+
+#twitter{
+	margin:auto auto  auto auto;
+	width:575px;
+	padding:10px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+#twitter label {
+	float:left;
+	width:100px;
+	color:#666666;
+	text-align:right;
+	padding:6px 10px 0 0;
+	font:14px 'Lucida Grande',sans-serif;
+}
+#twitter input, #twitter  textarea {
+	background-color:#fff;
+	border:1px solid #ccc;
+	font-size:15px;
+	margin:0;
+	padding:5px;
+	width:200px;
+	display:block;
+
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	float:left;
+}
+
+
+#twitter input:hover, #twitter textarea:hover {
+	border-color:inherit !important;
+	background-color:#EfEfEf;
+	-webkit-border-radius:5px 0 0 5px;
+	-moz-border-radius:5px 0 0 5px;
+	border-radius:5px 0 0 5px;
+
+}
+
+/* The interesting bit */
+
+#twitter input:not(:focus),#twitter textarea:not(:focus) {
+	opacity:0.6;
+}
+
+#twitter  input:required,#twitter  textarea:required {
+}
+
+#twitter  input:valid,#twitter  textarea:valid {
+	opacity:0.8;
+}
+
+#twitter input:focus:invalid,#twitter textarea:focus:invalid {
+	border:1px solid red;
+	background-color:#FFEFF0;
+}
+
+#twitter input[type=submit] {
+	background:none;
+	font-size:15px;
+	opacity:1;
+	padding:5px;
+	width:150px;
+	-moz-border-radius:5px;
+	-webkit--border-radius:5px;
+	border-radius:5px;
+	cursor:pointer;
+	margin-bottom:-10px;
+	margin-left:103px;
+	margin-top:10px;
+	background:url("https://s3.amazonaws.com/twitter_production/a/1274834447/images/buttons/bg-btn.gif") repeat-x scroll 0 0 #DDDDDD;
+	text-shadow:1px 1px 0 #FFFFFF;
+	border-color:#DDDDDD #DDDDDD #CCCCCC;
+	color: #333;
+}
+#twitter .outerDiv{
+	-webkit-transition: all 1s linear;
+	margin-bottom:16px;
+	margin-top:8px;
+}
+#twitter .outerDiv:hover .message{
+	opacity:1;
+	display:block;
+}
+#twitter .message{
+	width:200px;
+	float:left;
+	opacity:0;
+	-moz-border-radius:0 10px 10px 0;
+	-webkit-border-radius:0 10px 10px 0;
+	border-radius-bottomright:0 10px 10px 0;
+	background:url("https://s3.amazonaws.com/twitter_production/a/1274739546/images/signup_info.gif") no-repeat scroll 13px 50% #F2F2F2;
+	border-color:#DBDBDB;
+	border-style:solid;
+	border-width:1px 1px 1px 2px;
+	color:#666666;
+	display:none;
+	font-size:12px;
+	line-height:0.65em;
+	padding:0.85em 10px 0.85em 30px;
+}
+
+.clearfix{
+	clear:both;
+}
+
+#dureza {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+#out {
+    line-height: 28px;
+}
+
+#fs {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.out-fecha {
+    line-height: 10px;
+    margin-left: 10px;
+    vertical-align: text-top;
+}

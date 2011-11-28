@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>  
+        <link type="text/css" rel="stylesheet" media="screen" href="../css/estilos.css" />
+        <script type="text/javascript" src="../js/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="../js/archivo.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui-1.8.7.custom.min.js"></script>
+        <link type="text/css" rel="stylesheet" media="screen" href="../css/jquery-ui-1.8.7.custom.css" />        
+        <script src="../js/carousel.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../js/jquery.fancybox-1.3.4.pack.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/jquery.fancybox-1.3.4.css" media="screen" />
+        <script type="text/javascript">
+            stepcarousel.setup({
+                galleryid: 'carousel', //ID del div que contiene el carrusel
+                beltclass: 'belt', //Clase del primer div dentro del carrusel, que contiene al resto de divs
+                panelclass: 'panel', //Clase de cada panel individual
+                autostep: {enable:true, moveby:1, pause:3000},
+                panelbehavior: {speed:500, wraparound:true, persist:true},
+                statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+                contenttype: ['external'] //content setting ['inline'] or ['external', 'path_to_external_file']
+            })
+        </script>
+        <script type='text/Javascript'>
+                function hideshow (postid) {
+                var post = document.getElementById(postid);
+                if (post.className=="show"){
+                post.className="hide";
+                } else {
+                post.className="show";
+                }
+                }
+        </script>
+    </head>
+    <body>
+        <div id="borde">
+            <div id="wrap">
+                <div id="cabecera">
+                    <div id="contenedor-slider" style="">
+                        <div id="slider">
+                            <div class="imagen-slider img1"></div>
+                            <div class="imagen-slider img2"></div>
+                            <div class="imagen-slider img3"></div>
+                            <div class="imagen-slider img4"></div>
+                        </div>
+                        <div class="control_banner">
+                            <div class="control_marcas">
+                                <span onclick="ir_banner(0)" class="control_marcas_item control_activo" id="b1"></span>
+                                <span onclick="ir_banner(1)" class="control_marcas_item control_desactivo" id="b2"></span>
+                                <span onclick="ir_banner(2)" class="control_marcas_item control_desactivo" id="b3"></span>
+                                <span onclick="ir_banner(3)" class="control_marcas_item control_desactivo" id="b4"></span>
+                            </div>
+                            <div class="control_banner_botones">
+                                <a href="javascript:anterior_banner();" class="control_banner_boton"><img src="../imagenes/cabecero/anterior.png" alt=""/></a>
+                                <a id="btn_pause" href="javascript:pause();" class="control_banner_boton"><img src="../imagenes/cabecero/pause.png" alt=""/></a>
+                                <a id="btn_play" href="javascript:play();" class="control_banner_boton dnone"><img src="../imagenes/cabecero/play.png" alt=""/></a>
+                                <a href="javascript:siguiente_banner();" class="control_banner_boton"><img src="../imagenes/cabecero/siguiente.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="navegacion">
+                    <ul class="topnav">
+                        <li>
+                            <a href="#">Géneros</a><span class="flecha"></span>
+                            <ul class="subnav">
+                                <li><a href="../paginas/cienciaFiccion.html">Ciencia ficción</a></li>
+                                <li><a href="../paginas/accion.html">Acción</a></li>
+                                <li><a href="../paginas/terror.html">Terror</a></li>
+                                <li><a href="../paginas/fantasia.html">Fantasía</a></li>
+                                
+                               
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Top 5</a><span class="flecha"></span>
+                            <ul class="subnav">
+                                <li><a href="../paginas/battleship.html">1. Battleship</a></li>
+                                <li><a href="../paginas/piratas.html">2. Piratas en el Caribe</a></li>
+                                <li><a href="../paginas/resident.html">3. Resident Evil 4</a></li>
+                                <li><a href="../paginas/sherlock.html">4. Sherlock Homes 2</a></li>
+                                <li><a href="../paginas/thor.html">5. Thor</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="../paginas/contacto.html">Contacto</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
+                    </ul>
+                    <form action="#" id="buscador">
+                        <input class="texto" type="text" size="20" />
+                        <input type="submit" class="busca" value="buscar" />
+                    </form>
+                </div>
+
+                <div id="contenido">
+                    <!-- ***************************** CONTENIDO **************************************** -->
+
+                    <div id="actualidad" class="noticia">
+                        <div class="contenido_cabecera">
+                            Curiosiosa escena de Resident Evil: Ultratumba
+                        </div>
+                        <div class="contenido_principal" >
+                            Realmente esta curiosidad se puede aplicar a todas las películas de Paul W.S Anderson...A este director le encantan las imágenes generadas por ordenador, en las que se ve la estructura (un plano tridimensional) del edificio o la zona donde se desarrolla parte de la acción de la película. Hace un giro de 360º alrededor de la estructura, a medida que hace un zomm progresivo...al final, hace fundido de la imagen tridimensional con la imagen real...Esto ocurre con el edificio de Japón de Umbrella (RE Ultratumba), con la Colmenta (en RE 1), con la Pirámide (en Alien vs Predator)...
+                            <p>Hay otra curiosidad de esta película, cuando aparece Luther West lleva una camiseta nike con el logo del salto de Michael Jordan. Momentos después, Luther hace un salto parecido cuando detiene el avión. </p>
+                            <img class="curiosidadimagen" src="../imagenes/curiosidades/residentciudad.jpg"></img>
+                        </div>
+                        
+                    </div> 
+                    
+                    <div id="actualidad" class="noticia">
+                        <div class="contenido_cabecera">
+                            Curiosidades sobre Thor
+                        </div>
+                        <div class="contenido_principal" >
+                            <h1>Cartel con el mensaje Journey into mystery</h1>
+                            En el cartel que aparece con un paisaje puede leerse la frase “Journey into Mystery”, que curiosamente es el nombre original de la serie de los cómics de Thor, antes de llamarse ‘The Mighty Thor’.
+                            <img class="curiosidadimagen" src="../imagenes/curiosidades/thor1.jpg"></img>
+                            
+                            <p><a href="javascript:hideshow('idx')">Leer más [+]</a></p>
+                            
+                            <div class="hide" id="idx">
+                                <h1>Luke Cage</h1>
+                                Justo antes de que Thor se pueda acercar a su martillo, un agente de SHIELD de color y físcamente bastante grande. Muchos pensaron que podría ser Luke Cage, pero recordemos que en los cómics, Cage tiene una piel tan dura como el titanio y una fuerza sobrehumana, y Thor, en estado humano, consigue derrotarlo, siendo eso imposible si es Cage.
+                                <img class="curiosidadimagen" src="../imagenes/curiosidades/thor2.jpg"></img>
+
+                                <h1>SHIELD confunde al Destructor con Iron Man</h1>
+                                Este pequño guiño se conoce desde el primer trailer que salió de Thor, pero no deja de ser algo gracioso. Cuando el destructor llega a la Tierra, los priemros que se lo encuentra es el equipo de SHIELD, que lo confunden con otra armadura de Iron Man. Esta es la conversación que mantienen:</br>- Agente SHIELD: ¿Eso es obra de Stark?</br>- Agente Coulson: Yo que sé, él nunca me cuenta nada.
+                                <img class="curiosidadimagen" src="../imagenes/curiosidades/thor3.jpg"></img>
+                                
+                                 <h1>Donald Blake como ex-novio de Foster</h1>
+                                Un gran tema de conversación cuando Thor estaba todavía en camino, era si en la Tierra iban a usar una identidad de Donald Blake como en los cómics (en ellos, se exilia a Thor a la Tierra sin recuerdos como un estudiante de medicina con ese nombre). Finalmente decidieron descartar esta opción (tal vez para no alagar demasiado la película ni tampoco liar demasiado a los no lectores de cómics), pero obviamente tenían que hacer una referencia.
+Ésta surge cuando Jane le da ropa a Thor, y aparece la pegatina con el nombre de Donald Blake. Esta es la conversación:</br>- Thor: ¿Qué es esto?</br>- Jane: Oh, mi ex. Bueno con los pacientes y fatal con las relaciones. Es la única ropa que tengo de tu talla.
+                                <img class="curiosidadimagen" src="../imagenes/curiosidades/thor4.jpg"></img>
+                           </div>
+                        </div>
+                        
+                    </div> 
+                    
+                    <div id="actualidad" class="noticia">
+                        <div class="contenido_cabecera">
+                            Video de errores de la pelicula Piratas del Caribe: La maldición de la perla negra
+                        </div>
+                        <div class="contenido_principal" >
+                            <p>Aquí podemos ver este maravilloso video gracias a Sazkee182.</p>
+                            
+                            <a class="videocuriosidades" title="Errores de piratas del caribe" href="http://www.youtube.com/watch?v=RKFXAZFMGsc;autoplay=1">
+                                    
+                                    <img src="../imagenes/ver_video.jpg" alt="Ver Video" />
+                            </a>
+                            <script type="text/javascript">
+                                    $(".videocuriosidades").click(function() {
+                                        $.fancybox({
+                                            'padding'		: 0,
+                                            'autoScale'		: false,
+                                            'transitionIn'	: 'elastic',
+                                            'transitionOut'	: 'elastic',
+                                            'title'			: this.title,
+                                            'width'			: 640,
+                                            'height'		: 385,
+                                            'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+                                            'type'			: 'swf',
+                                            'swf'			: {
+                                                'wmode'				: 'transparent',
+                                                'allowfullscreen'	: 'true'
+                                            }
+                                        });
+                                        return false;
+                                    });
+                                </script>
+                            
+                        </div>
+                        
+                    </div> 
+                    
+                    
+                    
+                    <!-- ***************************** FIN CONTENIDO **************************************** -->
+                </div>
+
+                <div id="menu">
+                    <div class="menu_separador">
+                        Menú
+                    </div>
+                   
+                    <ul class="menu_caja">
+                        
+                        <li><a href="../paginas/estrenos.html">Estrenos</a></li>
+                        <li><a href="../paginas/curiosidades.html">Curiosidades</a></li>
+                        <li><a href="../paginas/lanzamientosDVD.html">Lanzamientos DVD</a></li>
+                        
+                    </ul>
+                         
+                    <div class="menu_separador">
+                        Iniciar sesión
+                    </div> 
+                    <div id="login_form">
+                        <form method="post" action="" id="registro">
+                            <p>Usuario</p>
+                            <input type="text" name="usuario" class="usuario"></input>
+                            <p>Contraseña</p>
+                            <input type="password" name="password" class="password"></input>
+                            <div class="enl-registro"><a  class="popup" href="nuevo_registro.html" id="reg">Registrarse</a></div>
+                            <p><input  type="submit" value="Entrar"></input></p>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="pie">
+                    
+                    <a href="http://validator.w3.org/check?uri=referer"><img
+                    src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+                    <div id="enlaces_pie">
+                     <a href="http://masterinftel.uma.es/"><img src="../imagenes/logos/logo_inftel.png" alt="master Inftel"/></a>
+                     <a href="http://www.uma.es"><img src="../imagenes/logos/logo_uma.JPG" alt="uma"/></a>
+                     <a href="http://fundacion.vodafone.es/fundacion/es"><img src="../imagenes/logos/logo_vodafonne.jpg" alt="fundación vodafone"/></a>
+                    </div>
+                </div>
+
+
+            </div><!--wrap-->
+        </div><!--borde-->
+    </body>
+</html>

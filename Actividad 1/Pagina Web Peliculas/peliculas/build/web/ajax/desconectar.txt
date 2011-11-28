@@ -1,0 +1,3 @@
+<div id="elnombre" style='margin-top:45px;'>Hola, " + nombre + "</div>
+<div style="margin-top:15px;"><a  class="popup" href="../../peliculas/paginas/nuevo_registro.html" id="reg">E-mail</a></div>
+<div style='margin-top:15px;'><a id=logout href='#'>Desconectarse</a></div>
